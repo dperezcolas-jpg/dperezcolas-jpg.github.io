@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anonyword</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔐 LOGIN -->
+<div id="auth">
+  <h2>Login / Registro</h2>
+
+  <input id="user" placeholder="Usuario">
+  <input id="pass" type="password" placeholder="Contraseña">
+
+  <button onclick="registrar()">Registrarse</button>
+  <button onclick="login()">Entrar</button>
+
+  <p id="authMsg"></p>
+</div>
+
+<!-- 💬 APP -->
+<div class="container" style="display: none;">
+
+  <!-- 📡 SIDEBAR -->
+  <div class="sidebar">
+    <h3>Usuarios</h3>
+    <ul id="users"></ul>
+  </div>
+
+  <!-- 💬 CHAT -->
+  <div class="main">
+
+    <!-- 🔝 TOP BAR -->
+    <div class="top">
+      <div class="room-bar">
+        <input id="roomNumber" placeholder="Número de sala">
+        <button onclick="entrarSala()">Entrar</button>
+        <button onclick="toggleMute()" id="muteBtn">🔊</button>
+      </div>
+    </div>
+
+    <div class="chat" id="chat"></div>
+
+    <div class="input-area">
+      <input id="message" placeholder="Escribe un mensaje">
+      <button onclick="enviarMensaje()">Enviar</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

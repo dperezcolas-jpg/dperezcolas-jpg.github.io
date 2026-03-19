@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2c2f33;
+  color: white;
+}
+
+.top input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background: #40444b;
+  color: white;
+  margin-right: 10px;
+}
+/* 🔐 LOGIN */
+#auth {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#auth input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 220px;
+  border-radius: 5px;
+  border: none;
+  background: #40444b;
+  color: white;
+}
+
+/* 💬 APP */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* 📡 SIDEBAR */
+.sidebar {
+  width: 220px;
+  background: #23272a;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h3 {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #b9bbbe;
+}
+
+/* 📋 LISTAS */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 📡 CANALES */
+#channels li {
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #b9bbbe;
+  transition: 0.2s;
+}
+
+#channels li:hover {
+  background: #40444b;
+  color: white;
+}
+
+/* 👥 USUARIOS */
+#users li {
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* 🟢 HABLANDO */
+.speaking {
+  color: #43b581 !important;
+  font-weight: bold;
+}
+
+/* 🧠 MAIN */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🔝 TOP BAR */
+.top {
+  padding: 10px;
+  background: #23272a;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 💬 CHAT */
+.chat {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* ✍️ INPUT */
+.input-area {
+  display: flex;
+  padding: 10px;
+  background: #23272a;
+  gap: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #40444b;
+  color: white;
+}
+
+/* 🔘 BOTONES */
+button {
+  padding: 10px;
+  background: #5865f2;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #4752c4;
+}
+
+/* 💬 MENSAJES */
+.message {
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.me {
+  background: #5865f2;
+  margin-left: auto;
+  text-align: right;
+}
+
+.other {
+  background: #40444b;
+}
+
+.meta {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
